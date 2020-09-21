@@ -96,6 +96,10 @@ let g:startify_custom_header = [
 \ ]
 
 " ------------------- "
+" general settings
+nmap <tab> gt
+
+" ------------------- "
 "  cpp config
 function RunAndCompileCpp()
 	let extension = expand('%:e')
