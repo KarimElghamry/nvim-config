@@ -1,4 +1,3 @@
-:cd D:
 set number
 set updatetime=100
 
