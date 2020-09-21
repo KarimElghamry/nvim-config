@@ -2,7 +2,6 @@
 set number
 set updatetime=100
 
-
 " vim-plug settings
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -47,7 +46,7 @@ let g:which_key_map.f.g = 'Search files excluding .gitignore'
 nnoremap <silent> <leader>n :NERDTree<CR>
 let g:which_key_map.n = 'Nerd Tree' 
 
-nnoremap <silent> <leader>v :e $MYVIMRC<CR>
+nnoremap <silent> <leader>v :tabnew $MYVIMRC<CR>
 let g:which_key_map.v = 'Open init.vim' 
 
 " ----------------------- "
@@ -95,3 +94,18 @@ let g:startify_custom_header = [
 			\'/_______  /|____/__|__|_|  /___/\  \   \___/   ',
 			\'        \/               \/      \_/          ' ,
 \ ]
+
+" ------------------- "
+"  cpp config
+function RunAndCompileCpp()
+	let extension = expand('%:e')
+	let fileName = expand('%:t:r')
+	if (extension == "cpp")
+		:cd %:h
+		:w
+		execute "!g++ -o " . fileName . " " . fileName . "." . extension . "&" . fileName . ".exe"
+	endif
+	return extension
+endfunction
+
+map <F8> :call RunAndCompileCpp()<CR>
