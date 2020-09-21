@@ -21,6 +21,7 @@ Plug 'https://github.com/tomasr/molokai.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'embark-theme/vim', { 'as': 'embark' }
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'https://github.com/ap/vim-css-color'
 call plug#end()
 
 set clipboard^=unnamed,unnamedplus
