@@ -7,7 +7,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/vim-which-key'
@@ -43,16 +42,8 @@ let g:which_key_map.f.f = 'Search all files'
 nnoremap <silent> <leader>fg :GFiles<CR>
 let g:which_key_map.f.g = 'Search files excluding .gitignore'
 
-nnoremap <silent> <leader>n :NERDTree<CR>
-let g:which_key_map.n = 'Nerd Tree' 
-
 nnoremap <silent> <leader>v :tabnew $MYVIMRC<CR>
 let g:which_key_map.v = 'Open init.vim' 
-
-" ----------------------- "
-" nerd-tree settings
-map <C-n> :NERDTreeToggle<CR>
-
 
 " ---------------------- "
 "  airline settings
@@ -94,6 +85,12 @@ let g:startify_custom_header = [
 			\'/_______  /|____/__|__|_|  /___/\  \   \___/   ',
 			\'        \/               \/      \_/          ' ,
 \ ]
+
+
+" ------------------- "
+" coc-explorer settings
+nmap <C-n> :CocCommand explorer<CR>
+
 
 " ------------------- "
 " general settings
