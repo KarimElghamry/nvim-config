@@ -1,5 +1,6 @@
 set number
 set updatetime=100
+set shiftwidth=4
 
 " vim-plug settings
 call plug#begin('~/.local/share/nvim/plugged')
