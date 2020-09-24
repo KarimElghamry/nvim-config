@@ -2,6 +2,9 @@ set number
 set updatetime=100
 set shiftwidth=4
 
+source $HOME/.config/nvim/modules/coc.vim
+
+
 " vim-plug settings
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -43,7 +46,7 @@ let g:which_key_map.f.f = 'Search all files'
 nnoremap <silent> <leader>fg :GFiles<CR>
 let g:which_key_map.f.g = 'Search files excluding .gitignore'
 
-nnoremap <silent> <leader>v :tabnew $MYVIMRC<CR>
+nnoremap <silent> <leader>v :e $MYVIMRC<CR>
 let g:which_key_map.v = 'Open init.vim' 
 
 " ---------------------- "
@@ -95,7 +98,8 @@ nmap <C-n> :CocCommand explorer<CR>
 
 " ------------------- "
 " general settings
-nmap <tab> gt
+nmap <silent> <tab> :bnext<CR>
+nmap <silent> <S-tab> :bprev<CR>
 
 " ------------------- "
 "  cpp config
@@ -110,4 +114,4 @@ function RunAndCompileCpp()
 	return extension
 endfunction
 
-map <F8> :call RunAndCompileCpp()<CR>
+map <silent> <F8> :call RunAndCompileCpp()<CR>
