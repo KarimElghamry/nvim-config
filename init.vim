@@ -5,24 +5,24 @@ set clipboard^=unnamed,unnamedplus
 set timeoutlen=500
 
 " sources for windows
-source $HOME/AppData/Local/nvim/plugs/plugs.vim
-source $HOME/AppData/Local/nvim/modules/coc.vim 
-source $HOME/AppData/Local/nvim/modules/vim-which-key.vim 
-source $HOME/AppData/Local/nvim/modules/airline.vim 
-source $HOME/AppData/Local/nvim/modules/onedark.vim 
-source $HOME/AppData/Local/nvim/modules/fugitive.vim 
-source $HOME/AppData/Local/nvim/modules/git-gutter.vim 
-source $HOME/AppData/Local/nvim/modules/startify.vim 
+" source $HOME/AppData/Local/nvim/plugs/plugs.vim
+" source $HOME/AppData/Local/nvim/modules/coc.vim 
+" source $HOME/AppData/Local/nvim/modules/vim-which-key.vim 
+" source $HOME/AppData/Local/nvim/modules/airline.vim  
+" source $HOME/AppData/Local/nvim/modules/onedark.vim 
+" source $HOME/AppData/Local/nvim/modules/fugitive.vim 
+" source $HOME/AppData/Local/nvim/modules/git-gutter.vim 
+" source $HOME/AppData/Local/nvim/modules/startify.vim 
 
 " sources for linux
-" source $HOME/.config/nvim/plugs/plugs.vim
-" source $HOME/.config/nvim/modules/coc.vim
-" source $HOME/.config/nvim/modules/vim-which-key.vim
-" source $HOME/.config/nvim/modules/airline.vim 
-" source $HOME/.config/nvim/modules/onedark.vim 
-" source $HOME/.config/nvim/modules/fugitive.vim 
-" source $HOME/.config/nvim/modules/git-gutter.vim 
-" source $HOME/.config/nvim/modules/startify.vim 
+source $HOME/.config/nvim/plugs/plugs.vim
+source $HOME/.config/nvim/modules/coc.vim
+source $HOME/.config/nvim/modules/vim-which-key.vim
+source $HOME/.config/nvim/modules/airline.vim 
+source $HOME/.config/nvim/modules/onedark.vim 
+source $HOME/.config/nvim/modules/fugitive.vim 
+source $HOME/.config/nvim/modules/git-gutter.vim 
+source $HOME/.config/nvim/modules/startify.vim 
 
 " ------------------- "
 " coc-explorer settings
