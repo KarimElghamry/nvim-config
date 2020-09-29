@@ -24,6 +24,7 @@ source $HOME/.config/nvim/modules/fugitive.vim
 source $HOME/.config/nvim/modules/git-gutter.vim 
 source $HOME/.config/nvim/modules/startify.vim 
 
+
 " ------------------- "
 " coc-explorer settings
 nmap <C-n> :CocCommand explorer<CR>
