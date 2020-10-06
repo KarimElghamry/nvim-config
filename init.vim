@@ -26,7 +26,6 @@ source $HOME/AppData/Local/nvim/modules/autocomment.vim
 " source $HOME/.config/nvim/modules/startify.vim 
 " source $HOME/.config/nvim/modules/autocomment.vim 
 
-
 " ------------------- "
 " coc-explorer settings
 nmap <C-n> :CocCommand explorer<CR>
