@@ -1,21 +1,23 @@
 function AutoComment()
     let extension = expand('%:e')
     let comment = '#'
-    let double_forward_slash = ["js", "jsx", "ts", "tsx", "cpp", "c", "dart"]
-    let hash_comment = ['py']
-    let double_quotes = ['vim']
-    if (index(hash_comment, extension) >= 0)
-	let comment = '#'
-    elseif (index(double_quotes, extension) >= 0)
-	let comment = '"'
-    elseif (index(double_forward_slash, extension) >= 0)
-	let comment = '//'
-    endif
+    let g:comment_dict = {'//': ["js", "jsx", "ts", "tsx", "cpp", "c", "dart"],
+		\"#": ['py'],
+		\'"': ['vim'],
+		\}
+
+    for item in items(g:comment_dict) 
+	if index(item[1], extension) >= 0
+	    let comment = item[0]
+	    break
+	endif
+    endfor
+
 
     if(getline(".")[:len(comment) - 1] != comment)
-	execute ':s/^/' . comment . ' /' 
+	execute ':s/^/' . escape(comment, '^$.*?/\[]') . ' /' 
     else
-	execute ':s/^' . comment . '\( \)//' 
+	execute ':s/^' . escape(comment, '^$.*?/\[]') . '\( \)//' 
     endif
 
     :noh

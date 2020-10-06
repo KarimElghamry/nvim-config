@@ -16,4 +16,4 @@ colorscheme onedark
 let g:airline_theme='onedark'
 let g:airline_powerline_fonts = 1
 
-hi Normal guibg=NONE ctermbg=NONE
+" hi Normal guibg=NONE ctermbg=NONE
