@@ -13,6 +13,7 @@ source $HOME/AppData/Local/nvim/modules/onedark.vim
 source $HOME/AppData/Local/nvim/modules/fugitive.vim 
 source $HOME/AppData/Local/nvim/modules/git-gutter.vim 
 source $HOME/AppData/Local/nvim/modules/startify.vim 
+source $HOME/AppData/Local/nvim/modules/autocomment.vim 
 
 " sources for linux
 " source $HOME/.config/nvim/plugs/plugs.vim
