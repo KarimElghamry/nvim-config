@@ -24,6 +24,8 @@ source $HOME/AppData/Local/nvim/modules/autocomment.vim
 " source $HOME/.config/nvim/modules/fugitive.vim 
 " source $HOME/.config/nvim/modules/git-gutter.vim 
 " source $HOME/.config/nvim/modules/startify.vim 
+" source $HOME/.config/nvim/modules/autocomment.vim 
+
 
 " ------------------- "
 " coc-explorer settings
