@@ -5,7 +5,7 @@ let g:comment_dict = {'//': ["js", "jsx", "ts", "tsx", "cpp", "c", "dart"],
 
 let g:default_comment = '#'
 
-function AutoComment()
+function! s:AutoComment()
     let extension = expand('%:e')
     let comment = g:default_comment 
     for item in items(g:comment_dict) 
@@ -25,5 +25,6 @@ function AutoComment()
     :noh
 endfunction
 
-vnoremap <silent><C-_> :call AutoComment()<CR>  
-nnoremap <silent><C-_> :call AutoComment()<CR>
+command! -range AutoComment <line1>,<line2>call <sid>AutoComment() 
+vnoremap <silent><C-_> :AutoComment<CR>  
+nnoremap <silent><C-_> :AutoComment<CR>
